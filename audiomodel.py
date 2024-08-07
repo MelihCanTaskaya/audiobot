@@ -8,7 +8,7 @@ import numpy as np
 from scipy.io.wavfile import write
 from meldataset import get_mel_spectrogram, MAX_WAV_VALUE
 
-def load_model(model_name='nvidia/bigvgan_base_24khz_100band', use_cuda_kernel=False):
+def load_model(model_name='nvidia/bigvgan_v2_44khz_128band_512x', use_cuda_kernel=False):
     """Load and prepare the BigVGAN model."""
     model = bigvgan.BigVGAN.from_pretrained(model_name, use_cuda_kernel=use_cuda_kernel)
     model.remove_weight_norm()
