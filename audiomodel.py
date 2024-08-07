@@ -1,5 +1,5 @@
 import sys
-sys.path.append('C:/Users/melih/BigVGAN')
+sys.path.append('/home/mdagtek/BigVGAN/')
 import os
 import torch
 import bigvgan
