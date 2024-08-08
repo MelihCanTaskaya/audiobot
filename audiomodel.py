@@ -70,8 +70,8 @@ def main(wav_path, output_directory, output_file, model_name='nvidia/bigvgan_bas
             torch.cuda.empty_cache()
 
 if __name__ == '__main__':
-    wav_path = r"C:\Users\melih\OneDrive\Desktop\Files\Music\Winter Haze 61.5bpm @cobalii.wav"
-    output_directory = r'C:\Users\melih\OneDrive\Desktop\Files\Music'
+    wav_path = r"{}".format(input("input file path")) # Path to the input audio file
+    output_directory = r"{}".format(input("output directory path")) # Path to the output directory
     output_file = 'generated_audio.wav'
     
     main(wav_path, output_directory, output_file)
